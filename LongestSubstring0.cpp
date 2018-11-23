@@ -23,7 +23,7 @@ int lengthOfLongestSubstring(string s) {
                 ++iter3;
             }
         }
-        int length = iter3 - iter1;
+        int length = iter2 - iter1;     /**/
         if(length > longestLength)
             longestLength = length;
     }
