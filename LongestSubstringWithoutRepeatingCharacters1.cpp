@@ -18,7 +18,7 @@ int lengthOfLongestSubstring(string s) {
                 break;
         }
         longestLength = max(longestLength, j - i);  //max定义在algorithm
-        while (s[i] != s[j])                        //令i = j'
+        while (s[i] != s[j])                        //优化：令i = j'
             ++i;
     }
     return longestLength;
